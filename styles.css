@@ -7,28 +7,84 @@
   */
   width: 960px;
   height: 720px;
-}
-
-/* ✏️ EDIT: Add your CSS styling for the design here!
-   IMPORTANT: Nest all your rules inside .my-design so they only affect YOUR design.
-   Example:
-   
-   .my-design {
-     background: #f0f0f0;
-     padding: 20px;
-     
-     h1 {
-       color: #333;
-       font-size: 48px;
-     }
-   }
-*/
+}     
 
 .my-design {
-  /* ✏️ Delete this sample and add your design rules here */
-  h1 {
-    color: green;
-    font-size: 88px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-  }
+  body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4b006e, #7a00b3);
+      font-family: "Crimson Text", serif;
+      color: #f3e9ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flyer {
+      background-color: rgba(0, 0, 0, 0.55);
+      border: 3px solid #000;
+      border-radius: 12px;
+      max-width: 700px;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    }
+
+    h1 {
+      font-family: "UnifrakturCook", "Times New Roman", serif;
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+    }
+
+    .today {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #ffccff;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem 0;
+    }
+
+    ul li {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: #d9a6ff;
+    }
+
+    .highlight {
+      color: #ffd6ff;
+      font-weight: bold;
+    }
+
+    .footer {
+      border-top: 1px solid #aaa;
+      padding-top: 1rem;
+      font-size: 1rem;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .email {
+      color: #ffb3ff;
+      text-decoration: none;
+    }
+
+    .email:hover {
+      text-decoration: underline;
+    } 
 }
